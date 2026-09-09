@@ -4,6 +4,7 @@
 [![Forks](https://img.shields.io/github/forks/daugf2527/aifreenav?style=flat-square&label=forks)](https://github.com/daugf2527/aifreenav/network/members)
 [![License](https://img.shields.io/github/license/daugf2527/aifreenav?style=flat-square)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/daugf2527/aifreenav?style=flat-square)](https://github.com/daugf2527/aifreenav/commits/main)
+[![Latest release](https://img.shields.io/github/v/release/daugf2527/aifreenav?style=flat-square)](https://github.com/daugf2527/aifreenav/releases/latest)
 [![Online demo](https://img.shields.io/badge/online%20demo-aifreenav.pages.dev-1565c0?style=flat-square)](https://aifreenav.pages.dev/)
 
 一个持续维护的 AI 站点目录，集中整理 AI API 中转、公益站、模型工具和限时福利入口。
