@@ -10,7 +10,7 @@
 
 **在线体验：[aifreenav.pages.dev](https://aifreenav.pages.dev/)**
 
-![AI 千里目](https://aifreenav.pages.dev/social-card.png)
+![AI FreeNav current directory preview](github-directory.png)
 
 如果这个目录帮你节省了查找时间，欢迎在 GitHub 点一个 Star，并反馈已经失效或值得补充的站点。
 
