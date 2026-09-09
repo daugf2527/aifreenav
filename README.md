@@ -12,6 +12,8 @@
 
 ![AI 千里目](social-card.png)
 
+如果这个目录帮你节省了查找时间，欢迎在 GitHub 点一个 Star，并反馈已经失效或值得补充的站点。
+
 ## 这是什么
 
 AI 千里目是一个面向开发者和 AI 用户的 **AI API directory / AI API 导航**。它把分散在公开网页、社区反馈和站点公告里的入口与规则整理到一处，帮助你快速比较：
@@ -67,6 +69,12 @@ python3 -m http.server 8080
 - `site-review.js`、`site-browser-review.js`：公开核验说明
 - `site-data.js`、`site-en.js`：当前中英文目录数据
 
+## 参与维护
+
+欢迎通过 [Issues](https://github.com/daugf2527/aifreenav/issues) 提交新站点、过期规则和错误链接。请附上公开来源、核验日期和可复现的页面信息；不要提交 API key、Cookie、密码或私人账号资料。
+
+To contribute, open an [Issue](https://github.com/daugf2527/aifreenav/issues) with the public source, check date, and reproducible page details. Never include API keys, cookies, passwords, or private account data.
+
 ## English
 
 AI FreeNav is a maintained **AI API directory** for developers and AI users. It organizes public entry points and current notes for free AI APIs, AI API gateways, LLM API proxies, AI relay sites, public-benefit services, model tools, and time-limited offers.
@@ -74,6 +82,8 @@ AI FreeNav is a maintained **AI API directory** for developers and AI users. It 
 The directory covers common provider keywords such as Claude, OpenAI, Gemini, DeepSeek, Qwen, Kimi, GLM, and Grok, as well as OpenAI-compatible API and Anthropic-compatible API services. Each record separates sign-up requirements, available credits, model capabilities, freshness, public-page verification, and risk notes.
 
 The interface supports Chinese and English, search, groups, rating filters, freshness labels, and one-click opening for the top 20 recommendations.
+
+If AI FreeNav saves you time, consider starring the repository and reporting outdated links or useful additions.
 
 Rules, credits, model inventory, and campaigns can change at the source site. Always verify the current source page before use. A rating is an editorial discovery signal, not a guarantee of availability or service quality.
 
