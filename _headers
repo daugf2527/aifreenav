@@ -1,0 +1,26 @@
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Security-Policy: default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; style-src 'self' 'unsafe-hashes' 'sha256-glVcboAKtochDFGJtZtEHB+8PinbkQ3Zs+JBdb16Bro=' 'sha256-KoDpn0xph7u8WibqodXrZSE2n0sFtpRM9dF1LwiwI0A=' 'sha256-5N1bdtYD6kyoFk1UmOecEV7t5OtRvC/yYULEo0jitqo=' 'sha256-ONkPsDKYOdUXxSX0sDx0tFh525qneLjFjwn9pKgnSU4=' 'sha256-N3DHUHMo7GaMuNT3rMIlj+VnKW/n2Va/6iTuCIsCYEQ=' 'sha256-qauEz8wrjHVvdsX8ixqo7Cl7T8yL3bKP+YrqLDlSrDk=' 'sha256-4kW7zIxn9sccUN0Ofj5tSl2OlZsAWeJ/avKi4m/Z7pw=' 'sha256-VWWCDhfivC5PTlhyxMEQabYMnb8gcOepHyyYAKt8LPE=' 'sha256-dMwlB8NW0bgErmvG5fUbFLqsRt3m0LUTmnMRE3xa1o0=' 'sha256-gR+QdUuvdGMaK2SCeL9Qc1Y+7s7t74Jg0y5YTWJ2nPQ=' 'sha256-XPv6tKOv3W/ZkUsFUio7YssYfIZDC7AfPuTARLHom/k=' 'sha256-Y+y57pi9nTOZiS86i5e54C2lZ7u1syZ9wF7GMUXDfwc=' 'sha256-fcycfGZYV98GCgvql59k1uH2dqzcp4AAJy5KTYynpNs=' 'sha256-+fUhuWO0/97Vry1kpODYK+A32b6YFzxwDZKAruskGJc=' 'sha256-ymDRuQnY0iLmsUHrDMFefcqq9pMS0UJzgsdEI+fwxWQ=' 'sha256-Os8g3wqimzmFnCBpqh1z0AcwI6FyWn3Dmx7x95h987M=' 'sha256-mgfkkSG0aYLjfgK40zZf6ivT+ho5vSoqxXIeC5a2vf0=' 'sha256-wV2wzVbnpwvbeIs1kXGTTnT/wiPRjygFy8dlcjzIQqA=' 'sha256-KfNFyQT1+O5JpKAhLzjHumuIbLTgSq1bIU6vlF2RPBs=' 'sha256-4uaLZ/KJqqkCF6DM9N7hHdLjznDY6EaBpXeH02v/QcE=' 'sha256-RciGG9X/0uwbHjYQuV84BTDokVKOYinaHlv53EsxQ64=' 'sha256-mAajGEKLONhDjtzHf74c/9iCk/hzlI2uxdanrzivedg=' 'sha256-o8PvBnvvpy71BTIxhw4Y94LJIyn7LO6SxA5Vc7s+dQw=' 'sha256-4ZTjeSlqgRedKIyX+ori16//rIY64/IjvcyQTcO4Nj4=' 'sha256-YzeYXIQ/1z3Lc0i1nVapxUWPpK1xxlieeIMY8Z+/5os='; img-src 'self' data:; font-src 'self'; upgrade-insecure-requests
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=()
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/SKILL.md
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/site-icons.svg
+  Cache-Control: public, max-age=86400, must-revalidate

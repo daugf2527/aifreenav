@@ -1,0 +1,41 @@
+# Build and deployment output
+dist/
+dist-fingerprinted/
+.wrangler/
+
+# Local favicon/download caches
+.site-favicon-cache/
+
+# Local agent/editor state
+.agents/
+.claude/
+.codex/
+skills-lock.json
+
+# Dependencies and local secrets
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+
+# Temporary visual QA captures
+*-check.png
+*-preview.png
+*-review.png
+card-layout-*.png
+header-desktop*.png
+final-card*.png
+favicon-deployed.png
+
+# Private maintenance evidence; keep these out of public mirrors
+*-audit.json
+*-reverification.json
+*-reverification-audit.json
+*-maintenance-audit.*
+*-rating-review.*
+*-evaluation-ledger.*
+*-browser-search-results.json
+*-registration-probe-*.md
+direct-registration-links.md
+translation-source.ndjson

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17232d" />
+    <meta name="description" content="AI 千里目收录 130 个 AI API、工具与服务站点，提供注册方式、可得额度、公开页核验与风险提示。" />
+    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href="https://aifreenav.pages.dev/" />
+    <link rel="alternate" type="text/markdown" href="/SKILL.md" title="AI 千里目选站与注册 Skill" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" hreflang="zh-CN" href="https://aifreenav.pages.dev/zh/" />
+    <link rel="alternate" hreflang="en" href="https://aifreenav.pages.dev/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://aifreenav.pages.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI 千里目" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:title" content="AI 千里目 | 免费 AI API 与工具导航" />
+    <meta property="og:description" content="收录 130 个 AI API、工具与服务站点，提供注册方式、可得额度、公开页核验与风险提示。" />
+    <meta property="og:url" content="https://aifreenav.pages.dev/" />
+    <meta property="og:image" content="https://aifreenav.pages.dev/social-card.png" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="922" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="AI 千里目 AI 站点目录" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI 千里目 | 免费 AI API 与工具导航" />
+    <meta name="twitter:description" content="收录 130 个 AI API、工具与服务站点，提供注册方式、可得额度、公开页核验与风险提示。" />
+    <meta name="twitter:image" content="https://aifreenav.pages.dev/social-card.png" />
+    <meta name="twitter:image:alt" content="AI 千里目 AI 站点目录" />
+    <title>AI 千里目 | 免费 AI API 与工具导航</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="site-favicons.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="site-header">
+        <div class="topbar">
+          <div class="site-brand">
+            <span class="brand-mark" aria-hidden="true">AI</span>
+            <div>
+              <h1 id="site-brand-title">AI 千里目 <span id="total-records"></span></h1>
+              <p>AI SITES / FIELD NOTES</p>
+            </div>
+          </div>
+          <button id="updates-button" class="update-ticker" type="button" aria-haspopup="dialog" aria-label="查看更新提示">
+            <span class="ticker-dot" aria-hidden="true"></span>
+            <span class="ticker-window"><span id="site-intro" class="ticker-track"><span>数据每日滚动更新，联系方式 qq4291567&nbsp;&nbsp;&nbsp;&nbsp;</span><span aria-hidden="true">数据每日滚动更新，联系方式 qq4291567&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span>
+          </button>
+          <div class="top-actions">
+            <label class="search-box" for="site-search">
+              <span>查找</span>
+              <input id="site-search" type="search" autocomplete="off" placeholder="名称、域名、额度、注册方式" />
+              <button id="clear-search" class="icon-button" type="button" aria-label="清空搜索" data-tooltip="清空">x</button>
+            </label>
+            <button id="language-toggle" class="language-marker" type="button" aria-label="切换至 English" data-tooltip="中文 / English">中<span>/</span>EN</button>
+          </div>
+        </div>
+        <div class="header-rule" aria-hidden="true"></div>
+        <section class="filter-row" aria-label="站点筛选与排序">
+          <div class="compact-filters">
+            <label class="rating-filter" for="rating-range">
+              <span>星级</span>
+              <input id="rating-range" type="range" min="1" max="5" value="1" step="1" />
+              <output id="rating-output" for="rating-range">全部</output>
+            </label>
+            <label class="select-filter" for="group-select">
+              <span>分组</span>
+              <select id="group-select"></select>
+            </label>
+            <label class="select-filter" for="category-select">
+              <span>类型</span>
+              <select id="category-select"></select>
+            </label>
+          </div>
+          <div class="bulk-open-actions">
+            <button id="open-top-sites" class="bulk-open-button" type="button" aria-describedby="bulk-open-status">
+              <span class="bulk-open-icon" aria-hidden="true">↗</span>
+              <span class="bulk-open-label">打开前 20 个推荐</span>
+              <span class="bulk-open-progress" aria-hidden="true"><span></span></span>
+            </button>
+            <span id="bulk-open-status" class="bulk-open-status" role="status" aria-live="polite"></span>
+          </div>
+          <div class="verification-timeline" aria-label="核验快照 2026 年 9 月 9 日">
+            <div><span>核验快照</span><strong>2026.09.09</strong></div>
+            <span class="timeline-line" aria-hidden="true"><i></i><i></i><i class="is-current"></i></span>
+            <small>公开页核验完成</small>
+          </div>
+        </section>
+      </header>
+
+      <section class="directory" aria-label="AI 站点目录">
+        <div id="site-list" class="site-list"></div>
+      </section>
+
+      <noscript>
+        <section class="noscript-summary">
+          <h2>AI 站点目录</h2>
+          <p>收录 130 个 AI API、工具与服务站点，整理注册方式、可得额度、公开页核验与风险提示。请启用 JavaScript 以浏览完整目录和筛选功能。</p>
+        </section>
+      </noscript>
+
+      <footer class="footer-note">
+        <span>资料来源：用户核实、站点公开页与 LINUX DO 近期反馈</span>
+        <span>仅整理公开入口与规则；额度、模型与活动以源站当前页面为准</span>
+      </footer>
+    </main>
+    <aside id="rating-guide" class="rating-guide" aria-label="评价体系">
+      <button id="rating-guide-toggle" class="rating-guide-toggle" type="button" aria-expanded="false" aria-controls="rating-guide-panel" aria-label="打开评价体系">
+        <span class="rating-guide-toggle-text">评价体系</span>
+        <span class="rating-guide-toggle-mark" aria-hidden="true">+</span>
+      </button>
+      <div id="rating-guide-panel" class="rating-guide-panel" hidden></div>
+    </aside>
+    <dialog id="update-dialog" class="update-dialog" aria-labelledby="update-dialog-title">
+      <div class="dialog-head">
+        <div>
+          <p class="kicker">UPDATE LOG</p>
+          <h2 id="update-dialog-title">更新提示</h2>
+        </div>
+        <button id="close-updates" class="icon-button" type="button" aria-label="关闭更新提示" data-tooltip="关闭">x</button>
+      </div>
+      <ul>
+        <li>当前展示 130 个站点；本轮已更新 JustDoWork、Agent Router，并下架 KSC SNKLI AI、RRR API、MotoMoto。</li>
+        <li>站点图标已本地化，首次加载后由浏览器长期缓存。</li>
+        <li>注册、额度与活动规则可能随源站变化，请以站内当前页面为准。</li>
+      </ul>
+    </dialog>
+    <script defer src="i18n.js"></script>
+    <script defer src="site-data.js"></script>
+    <script defer src="supplemental-sites.js"></script>
+    <script defer src="site-review.js"></script>
+    <script defer src="site-availability.js"></script>
+    <script defer src="site-browser-review.js"></script>
+    <script defer src="site-en.js"></script>
+    <script defer src="manual-ratings.js"></script>
+    <script defer src="manual-card-facts.js"></script>
+    <script defer src="app.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "AI 千里目",
+        "description": "收录 AI API、工具与服务站点的目录，包含注册方式、可得额度、公开页核验与风险提示。",
+        "url": "https://aifreenav.pages.dev/",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "AI 千里目",
+          "url": "https://aifreenav.pages.dev/"
+        }
+      }
+    </script>
+    <script
+      defer
+      type="module"
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token":"05b9dbb9ea784b6ba7f50b4cf84ba67d"}'
+    ></script>
+  </body>
+</html>
