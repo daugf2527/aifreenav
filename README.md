@@ -7,8 +7,6 @@
 
 **在线体验：[aifreenav.pages.dev](https://aifreenav.pages.dev/)**
 
-![AI 千里目](social-card.png)
-
 ## 这里有什么
 
 - 130+ 个 AI API、工具与服务站点
