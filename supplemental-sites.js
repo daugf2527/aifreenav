@@ -4,7 +4,7 @@ window.SUPPLEMENTAL_SITES = [
     id: "aff-removed",
     name: "removed",
     url: "https://your-endpoint.example.com/",
-    affiliateUrl: "https://your-endpoint.example.com/r/T8KiaeGU",
+    affiliateUrl: "https://your-endpoint.example.com/",
     domain: "your-endpoint.example.com",
     group: "高级推广",
     category: "通用 API",
