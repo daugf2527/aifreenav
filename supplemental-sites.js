@@ -2,7 +2,7 @@
 window.SUPPLEMENTAL_SITES = [
   {
     id: "aff-removed",
-    name: "DSH API",
+    name: "removed",
     url: "https://your-endpoint.example.com/",
     affiliateUrl: "https://your-endpoint.example.com/r/T8KiaeGU",
     domain: "your-endpoint.example.com",
