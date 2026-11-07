@@ -290,7 +290,7 @@ function registrationTags(site) {
   if (Array.isArray(site.registrationTags)) return site.registrationTags;
   const text = `${sourceField(site, "registration")} ${site.registrationGuide || ""}`;
   const tags = new Set();
-  if (/邮箱|邮件|QQ 邮箱|163|Google|Gmail|email/i.test(text)) tags.add("email");
+  if (/邮箱|邮件|邮箱|163|Google|Gmail|email/i.test(text)) tags.add("email");
   if (/GitHub/i.test(text)) tags.add("github");
   if (/LINUX\s*DO|LinuxDo|linux\.do/i.test(text)) tags.add("linuxdo");
   if (/邀请(?:链接|码)?|邀请码|注册码|CDK|LDC|回帖|留言|官方群|QQ群|TG 群|Discord/i.test(text)) tags.add("invite");
@@ -332,7 +332,7 @@ function registrationDisplay(site) {
 
   if (/GitHub/i.test(text)) add(githubAge ? `GitHub 账号需满 ${githubAge} 年` : "GitHub 账号注册");
   if (/LINUX\s*DO|LinuxDo|linux\.do/i.test(text)) add("LINUX DO 登录");
-  if (/邮箱|邮件|QQ 邮箱|163|Google|Gmail|email/i.test(text)) add(/Google|Gmail/i.test(text) ? "Google / 邮箱验证码注册" : "邮箱验证码注册");
+  if (/邮箱|邮件|邮箱|163|Google|Gmail|email/i.test(text)) add(/Google|Gmail/i.test(text) ? "Google / 邮箱验证码注册" : "邮箱验证码注册");
   if (/手机号|手机(?:号)?|电话/i.test(text)) add("需手机号");
   if (/邀请码|注册码|邀请(?:链接|码)?|CDK|LDC|回帖|留言|官方群|QQ群|TG 群|Discord/i.test(text)) add("邀请码 / 社群验证");
   if (/充值|购买|付费|订阅|支付|消费/i.test(text)) add("购买 / 充值后使用");
