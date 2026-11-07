@@ -94,6 +94,5 @@ done
 
 ## 参考
 
-本目录维护者自用的实例：https://your-endpoint.example.com/
 
 已知短板（如实记录）：没有独立公开价格页、`/v1/models` 需鉴权、个体运营无企业资质。建议小额使用。
